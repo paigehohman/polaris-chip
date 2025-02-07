@@ -1,42 +1,74 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="Description" content="Boilerplate for polaris chip" />
+    <base href="/" />
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <meta name="Description" content="Boilerplate for polaris chip">
-  <base href="/">
+    <style>
+      :root,
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: sans-serif;
+        background-color: #ededed;
+      }
+      polaris-chip {
+        margin: 16px;
+      }
+      a {
+        margin: 16px;
+        color: red;
+        background-color: azure;
+        padding: 50px;
+      }
+    </style>
+    <title>polaris-chip / my-card</title>
+  </head>
 
-  <style>
-    :root,
-    html,
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: sans-serif;
-      background-color: #ededed;
-    }
-    polaris-chip {
-      margin: 16px;
-    }
-  </style>
-  <title>polaris-chip / my-card</title>
-</head>
+  <body>
+    <h1>polaris-chip</h1>
+    <!-- this is going to do whatever the tag's defaults are -->
+    <polaris-chip title="News of Record" link="https://psu.edu/"></polaris-chip>
+    <polaris-chip title="Faculty and Staff"></polaris-chip>
+    <polaris-chip title="Sports are the only thing that matter"></polaris-chip>
+    <polaris-chip title="Grants and donations"></polaris-chip>
 
-<body>
-  <h1>polaris-chip</h1>
-  <!-- this is going to do whatever the tag's defaults are -->
-  <polaris-chip title="News of Record" link="https://psu.edu/"></polaris-chip>
-  <polaris-chip title="Faculty and Staff"></polaris-chip>
-  <polaris-chip title="Sports are the only thing that matter"></polaris-chip>
-  <polaris-chip title="Grants and donations"></polaris-chip>
+    <a href="https://psu.edu/" target="_blank">PSU</a>
 
-  <h1>my-card</h1>
-  <my-card></my-card>
-
-  <!-- this is what is bringing in the definition for this tag -->
-  <script type="module" src="./src/polaris-chip.js"></script>
-  <script type="module" src="./src/my-card.js"></script>
-</body>
-
+    <h1>Pittsburgh Athletes</h1>
+    <my-card
+      title="Sidney Crosby"
+      img="https://cdn.vox-cdn.com/thumbor/e4i1GyfkBQSLq2M9dz8_2TG_i-4=/1400x1400/filters:format(jpeg)/cdn.vox-cdn.com/uploads/chorus_asset/file/22678113/usa_today_16153650.jpg"
+      description="Sidney Crosby is the current captain of the Pittsburgh Penguins. He has been captain since 2007. He has been playing in the NHL since 2005."
+    ></my-card>
+    <my-card
+      title="TJ Watt"
+      img="https://www.jsonline.com/gcdn/authoring/authoring-images/2024/10/07/PMJS/75556190007-getty-2177170865.jpg?width=660&height=826&fit=crop&format=pjpg&auto=webp"
+      description="TJ Watt is a player on the Pittsburgh Steelers.."
+    ></my-card>
+    <my-card
+      title="Kris Letang"
+      img="https://s3951.pcdn.co/wp-content/uploads/2015/09/Kris-Letang-Penguins-3-1.jpg"
+      description="Kris Letang is a player on the Pittsburgh Penguins and is an alternate captain."
+    ></my-card>
+    <my-card
+      title="Andrew McCutchen"
+      img="https://assets-varnish.triblive.com/2024/09/7729745_web1_ptr-BucsMarlins06-091124.jpg"
+      description="Andrew McCutchen is an outfielder on the Pittsburgh Pirates."
+    ></my-card>
+    <my-card
+      title="Paul Skenes"
+      img="https://media.newyorker.com/photos/66bf760452e7d54dbea2fa71/2:3/w_937,h_1405,c_limit/Thomas-Paul-Skenes-GettyImages-2166278463.jpg"
+      description="Paul Skenes is on the Pittsburgh Pirates and was awarded rookie of the year in 2024."
+    ></my-card>
+    <!-- this is what is bringing in the definition for this tag -->
+    <script type="module" src="./src/polaris-chip.js"></script>
+    <script type="module" src="./src/my-card.js"></script>
+  </body>
 </html>
